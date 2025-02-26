@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love & Sorry Gift</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <!-- Page 1: Love Question Screen -->
+    <div class="page love-question active" id="page1">
+        <div class="container">
+            <div class="cat-container">
+                <img src="cat-normal.gif" alt="Cute Cat" id="catGif" class="cat-gif">
+            </div>
+            <h1 class="love-question">Do you love me?</h1>
+            <div class="button-container">
+                <button class="btn yes-btn" id="yesBtn">YES</button>
+                <button class="btn no-btn" id="noBtn">NO</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 2: Love & Sorry Canvas -->
+    <div class="page love-canvas" id="page2" style="display: none;">
+        <div class="header">
+            <div class="flower-decoration">
+                <span class="flower">🌸</span>
+                <span class="flower">🌺</span>
+                <span class="flower">🌸</span>
+            </div>
+            <h1 class="love-title">I LOVE YOU SWEETIE</h1>
+            <h2 class="sorry-subtitle">SORRY FOR THE LAST DAYS VEOLETI</h2>
+            <div class="flower-decoration">
+                <span class="flower">🌸</span>
+                <span class="flower">🌺</span>
+                <span class="flower">🌸</span>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <div class="photo-message-container">
+                <div class="photo-section">
+                    <div class="photo-frame">
+                        <img src="main-photo-01.png" alt="Our Special Moment" class="main-photo">
+                    </div>
+                    <p class="photo-caption">One of my favorites in this entire world. So precious 💝</p>
+                </div>
+            </div>
+
+            <div class="spotify-section">
+                <div class="section-title">
+                    <span class="music-note">🎵</span>
+                    Here are some special songs made especially for you
+                    <span class="music-note">🎵</span>
+                </div>
+                <div class="playlist">
+                    <div class="song" data-song="song1.mp3">
+                        <div class="song-play-btn">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="song-info">
+                            <h3>Die with a Smile</h3>
+                            <p>Lady GAGA</p>
+                            <div class="song-progress">
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                                <span class="time">0:00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="song" data-song="song2.mp3">
+                        <div class="song-play-btn">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="song-info">
+                            <h3>Wildflower</h3>
+                            <p>Billie Eilish</p>
+                            <div class="song-progress">
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                                <span class="time">0:00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="song" data-song="song3.mp3">
+                        <div class="song-play-btn">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="song-info">
+                            <h3>Good for You x One of the Girls</h3>
+                            <p>Dreamsoda</p>
+                            <div class="song-progress">
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                                <span class="time">0:00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="message-box">
+                <div class="message-header">
+                    <span class="heart-decoration">💖</span>
+                    <h3 class="message-title">My Dearest</h3>
+                    <span class="heart-decoration">💖</span>
+                </div>
+                <p class="romantic-message">
+                    You are the most precious gift in my life. Every moment with you is a treasure, and I'm truly blessed to have you. Your smile lights up my world, and your love makes everything better.
+                </p>
+                <p class="song-dedication">
+                    These songs remind me of our special moments together. Each melody carries the feelings I have for you.
+                </p>
+                <div class="message-footer">
+                    <span class="bow-decoration">🎀</span>
+                    <span class="heart-decoration">💝</span>
+                    <span class="bow-decoration">🎀</span>
+                </div>
+            </div>
+
+            <div class="polaroid-section">
+                <div class="photo-guide">
+                    <div class="guide-line"></div>
+                    <img src="camera.png" alt="Polaroid Camera" class="camera-icon">
+                    <div class="guide-line"></div>
+                </div>
+                <div class="polaroid-container" id="polaroidContainer">
+                    <div class="polaroid">
+                        <img src="photo1.jpg" alt="Memory 1">
+                    </div>
+                    <div class="polaroid">
+                        <img src="photo2.jpg" alt="Memory 2">
+                    </div>
+                    <div class="polaroid">
+                        <img src="photo3.jpg" alt="Memory 3">
+                    </div>
+                    <div class="polaroid">
+                        <img src="photo4.jpg" alt="Memory 4">
+                    </div>
+                    <div class="polaroid">
+                        <img src="photo5.png" alt="Memory 5">
+                    </div>
+                    <div class="polaroid">
+                        <img src="photo6.jpg" alt="Memory 6">
+                    </div>
+                </div>
+            </div>
+
+            <div class="postcard-section">
+                <div class="postcard">
+                    <div class="postcard-border">
+                        <div class="postcard-header">
+                            <div class="header-decoration">✦</div>
+                            <h3>LOVE LETTER</h3>
+                            <div class="header-decoration">✦</div>
+                        </div>
+                        <div class="postcard-content">
+                            <p class="dear">Dearest Love,</p>
+                            <p class="postcard-message">
+                                I know I've made mistakes, and I'm truly sorry for any pain I've caused. You mean everything to me, and I want to make things right. Your happiness is my priority, and I promise to do better. You deserve all the love and joy in the world, and I hope we keep each other always happy.
+                            </p>
+                            <p class="postcard-signature">
+                                Forever Yours,<br>
+                                <span class="signature">♥ Your Haithem ♥</span>
+                            </p>
+                        </div>
+                        <div class="postcard-stamp">
+                            <div class="stamp-border">
+                                <span class="stamp-heart">💌</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="player.js"></script>
+</body>
+</html>
